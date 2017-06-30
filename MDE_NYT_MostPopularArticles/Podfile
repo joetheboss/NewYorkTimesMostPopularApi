@@ -1,0 +1,11 @@
+use_frameworks!
+
+workspace "MDE_NYT_MostPopularArticles.xcworkspace"
+
+xcodeproj "MDE_NYT_MostPopularArticles.xcodeproj"
+
+target :MDE_NYT_MostPopularArticles do
+	platform :ios, '8.0'
+	pod 'RestKit', :git => 'https://github.com/RestKit/RestKit.git', :commit => '9cbba9eb1b490c3c5e2873c8fba8e9c0fec1bf07', :subspecs => ['Network', 'ObjectMapping', 'CoreData']
+    xcodeproj "MDE_NYT_MostPopularArticles.xcodeproj"
+end
